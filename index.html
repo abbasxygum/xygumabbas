@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Xygum Abbas | Portfolio</title>
+  <style>
+    :root {
+      --bg: #e0e7ff;
+      --text: #1e293b;
+      --primary: #4f46e5;
+      --glass: rgba(255, 255, 255, 0.4);
+      --shadow: rgba(0, 0, 0, 0.1);
+    }
+
+    body.dark {
+      --bg: #0f172a;
+      --text: #f1f5f9;
+      --primary: #6366f1;
+      --glass: rgba(30, 41, 59, 0.6);
+      --shadow: rgba(0, 0, 0, 0.4);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(145deg, var(--bg), #cbd5e1);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+      transition: background 0.4s, color 0.4s;
+    }
+
+    .wrapper {
+      display: flex;
+      flex-direction: row;
+      max-width: 1100px;
+      width: 100%;
+      background: var(--glass);
+      backdrop-filter: blur(15px);
+      border-radius: 16px;
+      box-shadow: 0 15px 35px var(--shadow);
+      overflow: hidden;
+    }
+
+    .left {
+      background-color: var(--primary);
+      color: white;
+      flex: 0.4;
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .left img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid white;
+      margin-bottom: 1rem;
+    }
+
+    .left h1 {
+      font-size: 1.8rem;
+      margin-bottom: 0.3rem;
+    }
+
+    .left p {
+      font-size: 0.95rem;
+      opacity: 0.85;
+    }
+
+    .right {
+      flex: 0.6;
+      padding: 2.5rem;
+    }
+
+    .section {
+      margin-bottom: 1.8rem;
+    }
+
+    .section h2 {
+      color: var(--primary);
+      margin-bottom: 0.8rem;
+    }
+
+    .skills {
+      display: flex;
+      gap: 0.6rem;
+      flex-wrap: wrap;
+    }
+
+    .skill {
+      background: var(--primary);
+      color: white;
+      padding: 0.4rem 1rem;
+      border-radius: 30px;
+      font-size: 0.85rem;
+    }
+
+    .contacts a {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 0.6rem;
+      color: var(--text);
+      text-decoration: none;
+      padding: 0.5rem 0.8rem;
+      border-radius: 6px;
+      transition: background 0.2s;
+    }
+
+    .contacts a:hover {
+      background-color: rgba(0, 0, 0, 0.05);
+    }
+
+    .resume-button {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.6rem 1.2rem;
+      background-color: var(--primary);
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .resume-button:hover {
+      background-color: #4338ca;
+    }
+
+    #themeToggle {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background: var(--primary);
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+      z-index: 1000;
+    }
+
+    @media (max-width: 768px) {
+      .wrapper {
+        flex-direction: column;
+      }
+
+      .left, .right {
+        flex: 1;
+        width: 100%;
+        text-align: center;
+      }
+
+      .left img {
+        margin: 0 auto 1rem;
+      }
+
+      .contacts {
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Theme Toggle -->
+  <button id="themeToggle">Toggle Theme</button>
+
+  <!-- Main Content -->
+  <div class="wrapper">
+    <div class="left">
+      <img src="IMG_3010.jpg" alt="Xygum Abbas" />
+      <h1>Xygum Abbas</h1>
+      <p>B.Tech CSE Student</p>
+    </div>
+    <div class="right">
+      <div class="section">
+        <h2>About Me</h2>
+        <p>
+          I am <strong>Xygum Abbas</strong>, a passionate and detail-oriented Computer Science undergraduate from Budgam, Jammu & Kashmir, currently pursuing B.Tech in Computer Science & Engineering at <strong>Baba Ghulam Shah Badshah University</strong> (Class of 2027).<br><br>
+          I am deeply interested in software development, system design, and emerging technologies like <strong>Blockchain</strong> and <strong>IoT</strong>. With a strong foundation in <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>, <strong>Python</strong>, and <strong>Rust</strong>, I enjoy building clean, efficient, and scalable applications.<br><br>
+          I am actively looking for opportunities to apply my skills through internships, collaborative projects, and developer communities.
+        </p>
+      </div>
+
+      <div class="section">
+        <h2>Technical Skills</h2>
+        <div class="skills">
+          <div class="skill">HTML</div>
+          <div class="skill">CSS</div>
+          <div class="skill">JavaScript</div>
+          <div class="skill">Python</div>
+          <div class="skill">Rust</div>
+          <div class="skill">MERN</div>
+          <div class="skill">Git</div>
+          <div class="skill">GitHub</div>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2>Technologies I Love</h2>
+        <div class="skills">
+          <div class="skill">Blockchain</div>
+          <div class="skill">IoT</div>
+          <div class="skill">DevOps</div>
+          <div class="skill">System Design</div>
+          <div class="skill">Open Source</div>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2>Soft Skills</h2>
+        <div class="skills">
+          <div class="skill">Teamwork</div>
+          <div class="skill">Problem Solving</div>
+          <div class="skill">Time Management</div>
+          <div class="skill">Communication</div>
+          <div class="skill">Adaptability</div>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2>Languages Spoken</h2>
+        <div class="skills">
+          <div class="skill">English</div>
+          <div class="skill">Urdu</div>
+          <div class="skill">Hindi</div>
+          <div class="skill">Kashmiri</div>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2>Certifications</h2>
+        <p>📜 Campus Ambassador – Pregrad (October to November 2023)</p>
+      </div>
+
+      <div class="section">
+        <h2>Contact</h2>
+        <div class="contacts">
+          <a href="tel:+919596593449">📞 +91 95965 93449</a>
+          <a href="https://wa.me/919596593449" target="_blank">💬 WhatsApp</a>
+          <a href="mailto:xygumabbas@gmail.com">📧 xygumabbas@gmail.com</a>
+          <a href="https://www.instagram.com/abbas.xygum" target="_blank">📸 Instagram</a>
+          <a href="http://www.linkedin.com/in/xygumabbas" target="_blank">🔗 LinkedIn</a>
+          <a href="https://github.com/abbasxygum" target="_blank">💻 GitHub</a>
+        </div>
+        <a href="Attachment%20CV%20%281%29.pdf" download class="resume-button">📄 Download Resume</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Dark Mode Toggle Script -->
+  <script>
+    const toggleBtn = document.getElementById('themeToggle');
+    const body = document.body;
+
+    if (localStorage.getItem('theme') === 'dark') {
+      body.classList.add('dark');
+    }
+
+    toggleBtn.addEventListener('click', () => {
+      body.classList.toggle('dark');
+      localStorage.setItem('theme', body.classList.contains('dark') ? 'dark' : 'light');
+    });
+  </script>
+
+</body>
+</html>
